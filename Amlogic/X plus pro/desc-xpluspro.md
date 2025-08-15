@@ -108,14 +108,14 @@ _Disclaimer1: Caso algum termo não seja compreendido, verifique-o na seção [g
 
 Após iniacializar o sistema pela primeira vez, é pedido ao usuário que forneça algumas informações de configuração, como nome de usuário, senha, configuração de zonas de tempo e afins. O processo é bem intuitivo. mas caso haja dúvida, utilize o nosso [guia para configuração do Armbian](#).
 
-### Instalação do sistema no armazenmento interno (**Em desenvolvimento**)
+### Instalação do sistema no armazenamento interno (**Em desenvolvimento**)
 
-⚠️Cuidado⚠️: Esta ação vai apagar todos os dados presentes no armazenamento da sua TV Box, convém fazer um backup.
-
+⚠️Cuidado⚠️: Esta ação vai apagar todos os dados presentes no armazenamento da sua TV Box!
 
 
 
 ## ❌ Erros comuns
 
 **Ainda não identificados**
+
 
