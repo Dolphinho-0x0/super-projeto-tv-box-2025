@@ -127,7 +127,7 @@ Caso sua X Plus Pro não esteja com acesso a internet, siga estes passos:
   - ```dpkg -i ./rsync_3.2.7-1ubuntu1.2_arm64.deb```
 6. Após instalados rode o script para instalar na memória flash interna com ```./aml-install-to-emmc.sh```
 
-**⚠️Cuidado⚠️: Este script deve funCionar corretamente, mas tem chances de brickar a TV Box!**
+**⚠️Cuidado⚠️: Este script deve funcionar corretamente, mas tem chances de brickar a TV Box!**
 
 7. Espere o script executar e após finalizado, desligue a x plus e remova o cartão SD
 8. Ligue de novo sem o cartão e verifique se está tudo corretamente instalado.
@@ -141,6 +141,7 @@ se alguém tiver paciência de ir atrás disso ou perguntar pros veteranos por f
 ## ❌Erros comuns
 
 **Ainda não identificados**
+
 
 
 
