@@ -14,8 +14,8 @@
 - [Processo detalhado](#-processo-detalhado)
   - [Cuidados necessários](#cuidados-necessários)
   - [Preparação para instalação](#preparação-para-instalação)
-  - [Configuração inicial do Armbian](#configuração-inicial-do-armbian)
-  - [Instalação do sistema no armazenamento interno](#instalação-do-sistema-no-armazenmento-interno)
+  - [Configuração inicial do Armbian](#Configuração-do-Armbian)
+  - [Instalação do sistema no armazenamento interno](#instalação-do-sistema-no-armazenamento-interno)
 - [Erros comuns](#-erros-comuns)
 
 ## 💻 Informações gerais 
@@ -51,8 +51,7 @@ Android 11 (pré-instalado).
 
 ## 📈 Desempenho **Ainda não testado**
 
-Confira nossa [metodologia de avaliação](material-de-apoio/glossario.md). <!-- Necessário criar arquivo de metodologia e linkar aqui -->
-
+ <!-- Necessário criar arquivo de metodologia e linkar aqui -->
 
 ## 🛠 Ferramentas utilizadas para descaracterização
 
@@ -104,18 +103,44 @@ _Disclaimer1: Caso algum termo não seja compreendido, verifique-o na seção [g
 ⚠️Lembre-se⚠️: o sistema está funcionando por meio do cartão SD, ou seja, caso removido, o firmware original da tv box ascenderá novamente, mas nunca retire o cartão SD com o aparelho ligado. Um tópico mais a frente ensinará a gravar o sistema no armazenamento interno, apagando todo o firmware original da TV Box.
 
 
-### Configuração do Armbian
+## ⚙️ Configuração do Armbian
 
-Após iniacializar o sistema pela primeira vez, é pedido ao usuário que forneça algumas informações de configuração, como nome de usuário, senha, configuração de zonas de tempo e afins. O processo é bem intuitivo. mas caso haja dúvida, utilize o nosso [guia para configuração do Armbian](#).
+Após inicializar o sistema pela primeira vez, é pedido ao usuário que forneça algumas informações de configuração, como nome de usuário, senha, configuração de zonas de tempo e afins. O processo é bem intuitivo. mas caso haja dúvida, utilize o nosso [guia para configuração do Armbian](#).
 
-### Instalação do sistema no armazenamento interno (**Em desenvolvimento**)
+### Instalação do sistema no armazenamento interno
 
 ⚠️Cuidado⚠️: Esta ação vai apagar todos os dados presentes no armazenamento da sua TV Box!
 
+Caso sua X Plus Pro não esteja com acesso a internet, siga estes passos:
 
+1. Baixe os pacotes rsync e dosfstools para arm64.
+  - [rsync_3.2.7-1ubuntu1.2_arm64.deb](https://ubuntu.pkgs.org/24.04/ubuntu-updates-main-arm64/rsync_3.2.7-1ubuntu1.2_arm64.deb.html)
+  - [dosfstools_4.2-1build3_arm64.deb](https://ubuntu.pkgs.org/22.04/ubuntu-main-arm64/dosfstools_4.2-1build3_arm64.deb.html)
+2. Insira o cartão SD no seu computador
+  - Vá na partição ROOTFS
+  - Acesse a pasta root
+  - Coloque os dois pacotes na pasta
+3. Ejete o cartão SD e insira na X Plus
+4. Após ligar e fazer o login, use o comando ```ls``` para verificar que os pacotes estão na pasta root
+5. Instale os pacotes usando o comando dpkg
+  - ```dpkg -i ./dosfstools_4.2-1build3_arm64.deb```
+  - ```dpkg -i ./rsync_3.2.7-1ubuntu1.2_arm64.deb```
+6. Após instalados rode o script para instalar na memória flash interna com ```./aml-install-to-emmc.sh```
 
-## ❌ Erros comuns
+**⚠️Cuidado⚠️: Este script deve funCionar corretamente, mas tem chances de brickar a TV Box!**
+
+7. Espere o script executar e após finalizado, desligue a x plus e remova o cartão SD
+8. Ligue de novo sem o cartão e verifique se está tudo corretamente instalado.
+
+### Instalação do Desktop (Em desenvolvimento)
+
+<!--Até o momento, não sei como instalar o desktop, essa distro do Armbian vem com um script chamado desktop_minimal.sh mas esse precisa de internet,
+e pra instalar o driver de internet precisa de inumeros outros pacotes,
+se alguém tiver paciência de ir atrás disso ou perguntar pros veteranos por favor adicionem aqui 🥀-->
+
+## ❌Erros comuns
 
 **Ainda não identificados**
+
 
 
