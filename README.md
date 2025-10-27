@@ -1,5 +1,5 @@
 
-![Logo Projeto TV BOX](/.assets/tvboxbannermod.png)
+![Logo Projeto TV BOX](/.assets/projetotvboxbannermod.png)
 
 # Descaracterização de TvBox
 
