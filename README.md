@@ -1,3 +1,6 @@
+
+![Logo Projeto TV BOX](/.assets/tvboxbanner.png)
+
 # Descaracterização de TvBox
 
 O objetivo deste projeto é agrupar protocolos de descaracterização para o maior número de modelos de TV Box possível. A descaracterização consiste na remoção do firmware ilegal dos aparelhos e subsequente instalação de um sistema operacional open-source. Como padrão utilizamos o sistema Armbian baseado em linux.
