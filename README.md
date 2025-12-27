@@ -31,6 +31,8 @@ Para saber qual é o fabricante do processador da sua TV Box, o mais indicado é
 - controle.md: mantém um histórico com datas do desenvolvimento do projeto.
 - informacoes-modelos-e-hardwares: contém todas as informações obtidas dos modelos de TvBox já analisados.
 
-## Contribuição
+## Contribuição e Contato
 
 Sinta-se à vontade para contribuir com novos tutoriais ou melhorias nos existentes. Caso tenha informações adicionais sobre outro modelo ou experiência com o processo, crie um pull request para adicioná-las ao repositório.
+
+Em caso de dúvidas e sugestões, sinta-se livre para nos contatar pelo e-mail do projeto : projetotvbox.unioeste@gmail.com
