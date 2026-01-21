@@ -99,7 +99,7 @@ _Disclaimer2: Muitos modelos com [SoC](../../material-de-apoio/glossario.md#SoC)
   - [Mirror 1 - Internet Archive](https://archive.org/details/amlogic-bootscripts-armbian-32)
   - [Mirror 2 - Google Drive](https://drive.google.com/file/d/1uJ1VTxr0qR2eQP7uGPI0Y7YekLL-2sA0/view?usp=drive_link)
 2. No computador/notebook, insira o cartão SD e Utilize um dos programas anteriores para gravar a imagem no cartão SD.
-3. Entre no diretório raiz do cartão SD após a gravação da imagem, onde diversas pastas e arquivos com extensão .bin podem ser encontrados.
+3. Entre no diretório raiz do cartão SD após a gravação da imagem, onde diversas pastas e arquivos com extensão .bin podem ser encontrados
 4. Copie os arquivos aml_autoscript, ArmbianEnv.txt, emmc_autoscript e s905_autoscript baixados anteriormente na sessão de scripts modificados para o diretório raiz 
 5. Abra o arquivo ArmbianEnv.txt e extlinux.conf (presente em /extlinux/extlinux.conf) com um editor de texto qualquer e substitua o que estiver escrito após "fdtfile=amlogic/" por "meson-sm1-sei610.dtb". Salve o arquivo e feche.
   - 💡Alternativamente, você também pode testar a compatibilidade do seguinte arquivo dtb:
