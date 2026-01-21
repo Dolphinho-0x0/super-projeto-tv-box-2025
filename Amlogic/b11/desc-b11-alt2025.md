@@ -94,24 +94,25 @@ _Disclaimer2: Muitos modelos com [SoC](../../material-de-apoio/glossario.md#SoC)
   - [Armbian 25.11.0 Gnome Desktop](https://drive.google.com/file/d/1-zZcubFN1tUw9vXrl_DSIvE7KVQduUzG/view?usp=drive_link)
   - [Mirror 1 - Onedrive](https://unioestebr-my.sharepoint.com/:u:/g/personal/gabriel_nieto_unioeste_br/EVR_IIvpbPxJgCRhdvEGFdUBdTE-YwXT3osKqDs4jyaFJA?e=LxhCkJ)
   - 💡  Essa imagem foi a que mostrou melhores resultados, mas você também pode experimentar com as builds mais recentes do Armbian no [site oficial](https://www.armbian.com/amlogic-s9xx-tv-box/) 
-- Scripts modificados de boot (Créditos ao devmfc)
+- Scripts modificados de boot (Necessário para o boot nessa box! Créditos ao devmfc)
   - [Scripts - source.zip](https://github.com/devmfc/amlogic-bootscripts-Armbian/releases/tag/v3)
   - [Mirror 1 - Internet Archive](https://archive.org/details/amlogic-bootscripts-armbian-32)
   - [Mirror 2 - Google Drive](https://drive.google.com/file/d/1uJ1VTxr0qR2eQP7uGPI0Y7YekLL-2sA0/view?usp=drive_link)
 2. No computador/notebook, insira o cartão SD e Utilize um dos programas anteriores para gravar a imagem no cartão SD.
 3. Entre no diretório raiz do cartão SD após a gravação da imagem, onde diversas pastas e arquivos com extensão .bin podem ser encontrados.
-4. Abra o arquivo ArmbianEnv.txt e extlinux.conf (presente em /extlinux/extlinux.conf) com um editor de texto qualquer e substitua o que estiver escrito após "fdtfile=amlogic/" por "meson-sm1-sei610.dtb". Salve o arquivo e feche.
+4. Copie os arquivos aml_autoscript, ArmbianEnv.txt, emmc_autoscript e s905_autoscript baixados anteriormente na sessão de scripts modificados para o diretório raiz 
+5. Abra o arquivo ArmbianEnv.txt e extlinux.conf (presente em /extlinux/extlinux.conf) com um editor de texto qualquer e substitua o que estiver escrito após "fdtfile=amlogic/" por "meson-sm1-sei610.dtb". Salve o arquivo e feche.
   - 💡Alternativamente, você também pode testar a compatibilidade do seguinte arquivo dtb:
     - [meson-sm1-sei610-ethfix.dtb](/.assets/meson-sm1-sei610-ethfix(2).dtb)
     - [Mirror 1 - Google drive](https://drive.google.com/file/d/1Fkg5QHTR4dwrnfF62zqoHsWRvZ285YU5/view?usp=drive_link)
     - [Mirror 2 - Internet Archive](https://archive.org/details/meson-sm1-sei610-ethfix2)
-5. Faça uma cópia do arquivo u-boot-s905x3.bin, também presente no diretório raiz do cartão SD, e renomeie essa cópia para u-boot.ext.
-6. Remova o cartão SD do computador/notebook.
+6. Faça uma cópia do arquivo u-boot-s905x3.bin, também presente no diretório raiz do cartão SD, e renomeie essa cópia para u-boot.ext.
+7. Remova o cartão SD do computador/notebook.
 
 - Ejete o cartão SD pelo sistema operacional antes de removê-lo, para evitar possível corrupção.
 
-7. Insira o cartão SD por meio de um adaptador USB na B11 desligada e conectada à um monitor/televisão por cabo HDMI.
-8. Pressione o botão update com um clip de papel desdobrado ou um palito de dente (o botão pode ser encontrado dentro de um "furo" na parte debaixo da TV Box) e conecte a fonte de alimentação enquanto o botão ainda estiver pressionado. Mantenha o botão de update pressionado e solte assim que algum sinal de vídeo for observado no monitor/televisão.
+8. Insira o cartão SD por meio de um adaptador USB na B11 desligada e conectada à um monitor/televisão por cabo HDMI.
+9. Pressione o botão update com um clip de papel desdobrado ou um palito de dente (o botão pode ser encontrado dentro de um "furo" na parte debaixo da TV Box) e conecte a fonte de alimentação enquanto o botão ainda estiver pressionado. Mantenha o botão de update pressionado e solte assim que algum sinal de vídeo for observado no monitor/televisão.
 ⚠️Lembre-se⚠️: o sistema está funcionando por meio do cartão SD, ou seja, caso removido, o firmware original da tv box ascenderá novamente, mas nunca retire o cartão SD com o aparelho ligado. Um tópico mais a frente ensinará a gravar o sistema no armazenamento interno, apagando todo o firmware original da TV Box.
 
 ### Configuração inicial do Armbian
