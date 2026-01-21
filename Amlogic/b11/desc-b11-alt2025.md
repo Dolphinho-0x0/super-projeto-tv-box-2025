@@ -106,6 +106,7 @@ _Disclaimer2: Muitos modelos com [SoC](../../material-de-apoio/glossario.md#SoC)
     - [meson-sm1-sei610-ethfix.dtb](/.assets/meson-sm1-sei610-ethfix(2).dtb)
     - [Mirror 1 - Google drive](https://drive.google.com/file/d/1Fkg5QHTR4dwrnfF62zqoHsWRvZ285YU5/view?usp=drive_link)
     - [Mirror 2 - Internet Archive](https://archive.org/details/meson-sm1-sei610-ethfix2)
+    - Ao baixar, arraste o arquivo .dtb para a pasta dtb/amlogic/
 6. Faça uma cópia do arquivo u-boot-s905x3.bin, também presente no diretório raiz do cartão SD, e renomeie essa cópia para u-boot.ext.
 7. Remova o cartão SD do computador/notebook.
 
